@@ -8,19 +8,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <br></br>
+        <LoginButton>Login</LoginButton>
+        <LogoutButton>Logout</LogoutButton>
+        <Profile>Profile</Profile>
+        <br></br>
         <img src={"irwin-logo.png"} className="App-logo" alt="logo" />
-        <div>
-          <LoginButton>Login</LoginButton>
-          <LogoutButton>Logout</LogoutButton>
-        </div>
         <br></br>
-        <div>
-          <Profile>Profile</Profile>
-        </div>
-        <br></br>
+        <p>Form Builder</p>
         <div>
           <FormBuilder></FormBuilder>
         </div>
+        <br></br>
       </header>
     </div>
   );
