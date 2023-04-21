@@ -2,7 +2,7 @@ import './App.css';
 import LoginButton from './components/login';
 import LogoutButton from './components/logout';
 import Profile from './components/profile';
-import UserType from './pages/UserType';
+import UserType from './components/UserType';
 //import FormBuilder from './components/FormBuilder';
 
 
