@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1f27;
+  height: 140px;
+  padding: 0 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.logo {
+  text-align: center;
+  margin-right: 125px;
+}
+
+.logo img {
+  height: 140px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.bar-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.bar-btn:hover {
+  color: #007bff;
+}
+
+.buttons-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttons-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
