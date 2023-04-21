@@ -2,8 +2,8 @@ import './App.css';
 import LoginButton from './components/login';
 import LogoutButton from './components/logout';
 import Profile from './components/profile';
-//import UserType from './pages/UserType';
-import FormBuilder from './components/FormBuilder';
+import UserType from './pages/UserType';
+//import FormBuilder from './components/FormBuilder';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <br></br>
         <div>
         
-       <FormBuilder></FormBuilder>
+       <UserType></UserType>
           
         </div>
         

@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 100px;
   }
   
   h1 {
@@ -47,5 +47,5 @@ body{
   
   footer {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 100px;
   }
