@@ -71,23 +71,6 @@ function FormBuilder() {
       }
     let submit = async (event) => {
         event.preventDefault()
-        // Axios.post('http://localhost:7000/insert', {
-        //     name: user.name,
-        //     form: JSON.stringify(fields)
-        // }).then(function (response) {
-        //     console.log(response);
-        // })
-
-        // const test = await sendForm(user.name, fields)
-
-        // console.log(test)
-
-        // const response = await Axios.post('http://localhost:7000/insert', {
-        //     name: user.name,
-        //     form: JSON.stringify(fields)
-        // })
-
-        // console.log(response.data)
 
         const md5_hash = md5(JSON.stringify(Date.now()), user.email)
 

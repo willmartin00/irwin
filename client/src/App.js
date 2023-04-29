@@ -10,7 +10,7 @@ function App() {
  
   return (
     <div className="App">
-      
+
       <header className="App-header">
         <br></br>
         <LoginButton>Login</LoginButton>
@@ -20,9 +20,7 @@ function App() {
         <img src={"irwin-logo.png"} className="App-logo" alt="logo" />
         <br></br>
         <div>
-        
-       <UserType></UserType>
-          
+          <UserType/>
         </div>
         
         <br></br>
