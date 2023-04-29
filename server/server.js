@@ -19,11 +19,15 @@ async function sendForm(form) {
 
 app.post('/insert', async(req, res) => {
     const name = req.body.name
+    const formDesc = req.body.formDesc
+    const image = req.body.image
     const form = req.body.form
     const code = req.body.code
 
     const formData = new Form({
         name: name,
+        formDesc: formDesc,
+        image: image,
         form: form,
         code: code
     })
