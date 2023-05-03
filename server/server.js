@@ -17,6 +17,37 @@ async function sendForm(form) {
     })
 }
 
+app.get('/formget', async(req, res) => {
+    const code = req.body.code
+    console.log(code)
+
+    let resForm = new Form({
+        code: code
+    })
+
+    resForm.findOne({code: code}, function(err, form) {
+        if(err) {
+            console.log(err)
+        }
+        else {
+            console.log(form)
+            // res.set({
+            //     "Content-Type": "application/json",
+            //     "Access-Control-Allow-Origin": "*",
+            // });
+            // res.send(form)
+        }
+    }).then(form => {
+        // console.log(form)
+        // res.set({
+        //     "Content-Type": "application/json",
+        //     "Access-Control-Allow-Origin": "*",
+        // });
+        // res.send(form)
+    })
+
+});
+
 app.post('/insert', async(req, res) => {
     const name = req.body.name
     const formDesc = req.body.formDesc

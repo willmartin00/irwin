@@ -48,6 +48,7 @@ function FormBuilder() {
     const { isAuthenticated, user, isLoading } = useAuth0()
     const [fields, setFields] = useForm()
     const [fieldsDesc, setFieldsDesc] =useForm()
+    const [code, setCode] = useState('')
 
     const handleChange = (event, index) => {
         let form = [...fields]
@@ -73,7 +74,7 @@ function FormBuilder() {
         event.preventDefault()
 
         const md5_hash = md5(JSON.stringify(Date.now()), user.email)
-
+        setCode(md5_hash)
         fetch('http://localhost:7000/insert', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -162,6 +163,11 @@ function FormBuilder() {
   <button onClick={addFields}>New field</button>
   <br></br>
   <button onClick={submit}>Submit</button>
+  <br></br>
+  <p>-----------</p>
+  <textarea value={code} placeholder='Survey Code' readOnly />
+  <br></br>
+  <button onClick={navigator.clipboard.writeText(code)} >Copy Code</button>
 </div>
         )
     }
